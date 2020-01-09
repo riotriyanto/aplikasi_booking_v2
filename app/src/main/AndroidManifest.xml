@@ -15,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Ruangan"></activity>
+        <activity android:name=".Profil"></activity>
+        <activity android:name=".Ruangan" />
         <activity android:name=".Edit" />
         <activity android:name=".Delete" />
         <activity android:name=".Tambah" />
