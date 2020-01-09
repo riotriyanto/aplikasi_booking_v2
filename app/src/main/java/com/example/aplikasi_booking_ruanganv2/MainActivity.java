@@ -17,7 +17,7 @@ import static com.example.aplikasi_booking_ruanganv2.Login.TAG_ID;
 import static com.example.aplikasi_booking_ruanganv2.Login.TAG_USERNAME;
 
 public class MainActivity extends AppCompatActivity {
-    CardView logout, booking;
+    CardView logout, booking, ruangan;
     SharedPreferences sharedpreferences;
     String id, username;
     TextView txt_username, txt_nama;
@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
         logout = findViewById(R.id.logout);
         booking = findViewById(R.id.booking);
+        ruangan = findViewById(R.id.ruangan);
 
 
 
@@ -84,6 +85,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Booking.class);
+                startActivity(intent);
+            }
+        });
+
+        ruangan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Ruangan.class);
                 startActivity(intent);
             }
         });
